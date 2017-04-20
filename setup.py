@@ -6,11 +6,11 @@ setup(
     packages=["yamldown"],
     author="edouglass",
     author_email="edouglass@lbl.gov",
-    url="https://github.com/dougli1sqrd/yamldown"
-    download_url="https://github.com/dougli1sqrd/yamldown/archive/0.1.1.tar.gz"
-    description="Python library for loading and dumping \"yamldown\" (markdown with embedded yaml) files."
-    long_description=open("README.md").read()
-    keywords=["yaml", "markdown"]
+    url="https://github.com/dougli1sqrd/yamldown",
+    download_url="https://github.com/dougli1sqrd/yamldown/archive/0.1.1.tar.gz",
+    description="Python library for loading and dumping \"yamldown\" (markdown with embedded yaml) files.",
+    long_description=open("README.md").read(),
+    keywords=["yaml", "markdown"],
     install_requires=[
         "pyYaml==3.12",
     ],

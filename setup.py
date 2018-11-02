@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="yamldown",
-    version="0.1.3",
+    version="0.1.4",
     packages=["yamldown"],
     author="edouglass",
     author_email="edouglass@lbl.gov",
@@ -12,6 +12,6 @@ setup(
     long_description=open("README.md").read(),
     keywords=["yaml", "markdown"],
     install_requires=[
-        "pyYaml==3.12",
+        "pyYaml==3.13",
     ],
 )

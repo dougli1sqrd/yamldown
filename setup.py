@@ -7,7 +7,7 @@ setup(
     author="edouglass",
     author_email="edouglass@lbl.gov",
     url="https://github.com/dougli1sqrd/yamldown",
-    download_url="https://github.com/dougli1sqrd/yamldown/archive/0.1.3.tar.gz",
+    download_url="https://github.com/dougli1sqrd/yamldown/archive/0.1.4.tar.gz",
     description="Python library for loading and dumping \"yamldown\" (markdown with embedded yaml) files.",
     long_description=open("README.md").read(),
     keywords=["yaml", "markdown"],

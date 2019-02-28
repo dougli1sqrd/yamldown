@@ -12,6 +12,6 @@ setup(
     long_description=open("README.md").read(),
     keywords=["yaml", "markdown"],
     install_requires=[
-        "pyYaml==4.2b4",
+        "pyYaml==5.1b3",
     ],
 )

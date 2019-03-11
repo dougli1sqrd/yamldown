@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="yamldown",
-    version="0.1.6",
+    version="0.1.7",
     packages=["yamldown"],
     author="edouglass",
     author_email="edouglass@lbl.gov",

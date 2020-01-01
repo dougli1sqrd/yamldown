@@ -42,7 +42,7 @@ def _is_yaml_end(line: str, yml_buffer: Buffer) -> bool:
 
 def _dump(yml: Dict, markdown: str, yamlfirst=True) -> str:
 
-    yamlout = yaml.dump(yml, default_flow_style=False, indent=2) # type: str
+    yamlout = yaml.dump(yml, default_flow_style=False, indent=2, allow_unicode=True) # type: str
 
     dump = ""
     if yamlfirst:

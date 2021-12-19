@@ -35,10 +35,10 @@ def _load(stream: IO[str]) -> Tuple[Dict, str]:
     return (yml_dict, md_contents.contents.strip("\n"))
 
 def _is_yaml_start(line: str, yml_buffer: Buffer) -> bool:
-    return line.strip("\n").endswith("---") and yml_buffer.empty()
+    return line.strip().endswith("---") and yml_buffer.empty()
 
 def _is_yaml_end(line: str, yml_buffer: Buffer) -> bool:
-    return line.strip("\n").endswith("---") and not yml_buffer.empty()
+    return line.strip().endswith("---") and not yml_buffer.empty()
 
 def _dump(yml: Dict, markdown: str, yamlfirst=True) -> str:
 

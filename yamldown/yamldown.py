@@ -31,7 +31,7 @@ def _load(stream: IO[str]) -> Tuple[Dict, str]:
 
         current_buffer.append(line)
 
-    yml_dict = yaml.load(yml_contents.contents, Loader=yaml.FullLoader) # type: Dict
+    yml_dict = yaml.load(yml_contents.contents, Loader=yaml.FullLoader) or {} # type: Dict
     return (yml_dict, md_contents.contents.strip("\n"))
 
 def _is_yaml_start(line: str, yml_buffer: Buffer) -> bool:

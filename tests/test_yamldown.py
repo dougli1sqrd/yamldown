@@ -109,6 +109,14 @@ class TestLoad(unittest.TestCase):
         self.assertEqual(yml_contents, expected_yml)
         self.assertEqual(md_contents, expected_md)
 
+    def test_return_empty_dict_when_no_yaml(self):
+        doc = string_document(just_md())
+        yml_contents, md_contents = yamldown._load(doc)
+
+        expected_yml = {}
+
+        self.assertEqual(yml_contents, expected_yml)
+
 class TestDump(unittest.TestCase):
 
     def test_dump_yaml_first(self):
